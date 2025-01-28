@@ -1,0 +1,234 @@
+@import url('https://cdn.jsdelivr.net/gh/primer/css/fonts/mona-sans.css'); /* I know this isnt from google fonts, but I really wanted to use it*/
+
+/* General Styles */
+body {
+    margin: 0;
+}
+
+/* Nav Styles */
+nav {
+    background-color: #00693f;
+    padding: 1em;
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7); /* Added feature: subtle shadow for depth */
+    
+    
+    
+}
+
+nav p, nav a {
+    padding: 0 20px;
+    color: #cdfad0;
+}
+
+a {
+    font-family: 'Mona Sans';
+    color: #00693f;
+    text-decoration: none;
+
+}
+
+a:hover {
+    color: #08a868;
+    text-decoration: underline;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #00693f;
+    color: #cdfad0;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Added feature: subtle shadow for depth */
+
+}
+
+footer a {
+    color: #7d997f;
+    font-size: 20px;
+}
+
+footer a:hover {
+    color: #cdfad0;
+}
+
+/* Splash Section */
+.splash {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+
+
+.splash h1 {
+    font-family: 'Mona Sans';
+    color: #045a0a;
+    font-size: 2em;
+    justify-content: center;
+    text-align: center;
+
+
+}
+
+.splash img {
+    border: 5px solid #00693f; /* Thick green border */
+    border-radius: 10%; /* Makes the image a circle */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Optional: Adds a subtle shadow */
+
+
+}
+
+.splash p {
+    font-family: 'Mona Sans';
+    color: #003303;
+    text-align: center;
+    font-size: 1.4em;
+}
+
+/* Horizontal Rules */
+hr {
+    border-top: 3px dashed #00693f; /* Custom border thickness and color */
+    margin: 10px 0; 
+    width: 100%;
+}
+
+/* Sections */
+section {
+    font-family: 'Mona Sans';
+    color: #003303;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Section Headings */
+section h2 {
+    font-family: 'Mona Sans';
+    color: #003303;
+    font-size: 2.5em;
+}
+
+/* Paragraph Styles */
+section p {
+    font-family: 'Mona Sans';
+    color: #003303;
+    font-size: 1.2em;
+}
+
+/* link styles */
+
+/* List Styles */
+ul {
+    font-family: 'Mona Sans';
+    font-size: 1.2em;
+    color: #003303;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* 3 equal columns */
+}
+
+ul li {
+    padding: 1em;
+    margin: 1em;
+    border: 1px solid #00693f; /* Light outline for structure */
+    border-radius: 5px; /* Smooth rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06); /* Subtle shadow */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+dl {
+    font-family: 'Mona Sans', sans-serif;
+    font-weight: bold;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* 3 equal columns */
+    grid-template-rows: 1fr; 
+    gap: 1.5rem; /* Space between items */
+    padding: 1rem;
+    width: 100%; /* Ensure the grid takes up available space */
+
+
+}
+
+dl div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+
+dl dt{
+
+}
+dl dd{}
+
+/* Project Section */
+.three-col {
+    font-family: 'Mona Sans', sans-serif;
+    font-weight: bold;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* 3 equal columns */
+    padding: 60px;
+}
+
+.card {
+    background-color: #2cc789; /* Clean white background */
+    border-radius: 12px; /* Smooth rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06); /* Subtle shadow */
+    border: 1px solid #00693f; /* Light outline for structure */
+    padding: 1.5em; /* Inner spacing for content */
+    margin: 1em; /* Space around the card */
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    align-items: center;
+}
+
+.card img {}
+
+.card ul {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+
+}
+
+/* Contact Page Styles */
+.one-col {
+    font-family: 'Mona Sans';
+    display: grid;
+    grid-template-columns: 1fr; /* Single column */
+    padding: 60px;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column */
+    padding: 100px;
+}
+
+form input, form textarea {
+    font-family: 'Mona Sans';
+    font-size: 1.2em;
+    padding: 0.5em;
+    margin: 0.5em;
+    border: 1px solid #00693f; 
+    border-radius: 5px; 
+}
+
+form input:focus, form textarea:focus {
+    outline: none;
+    border: 1px solid #08a868; 
+}
+
+form button {}
+
+form button:hover {}
