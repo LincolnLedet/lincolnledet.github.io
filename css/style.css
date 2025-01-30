@@ -80,8 +80,17 @@ footer a:hover {
     border: 5px solid #00693f; /* Thick green border */
     border-radius: 10%; /* Makes the image a circle */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Optional: Adds a subtle shadow */
+}
 
+.splash img:hover {
+    animation: rotate 3s infinite;
 
+}
+
+@keyframes rotate {
+    50% {
+        transform: rotate(180deg);
+    }
 }
 
 .splash p {
